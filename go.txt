@@ -1,0 +1,12 @@
+configuration IDEA
+- telechargement plugin
+- activation testing automatique
+
+Dans un Terminal
+- export GOPATH=~/Development/xke-dd-over-tdd
+- go get github.com/stretchr/testify
+- go get golang.org/x/tools/cmd/cover
+- go test xke -v
+
+Notes
+https://github.com/stretchr/testify#installation

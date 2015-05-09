@@ -1,0 +1,9 @@
+= xke-over-dd-over-tdd-scala
+
+== Prérequis
+Eclipse
+Scala IDE
+sbt
+
+== Erreurs
+Sofia = medal

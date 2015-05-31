@@ -54,4 +54,10 @@ describe "The Dungeon" do
       end
     end
   end
+
+  context "readds numbers" do
+    it "readding 18 (1+8) becomes 9" do
+      expect(@dungeon.readd(18)).to be(9)
+    end
+  end
 end

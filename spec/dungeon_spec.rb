@@ -59,6 +59,9 @@ describe "The Dungeon" do
     it "readding 18 (1+8) becomes 9" do
       expect(@dungeon.readd(18)).to be(9)
     end
+    it "readding 22 (2+2) becomes 4" do
+      expect(@dungeon.readd(22)).to be(4)
+    end
   end
 
   context "convert numbers to letters" do

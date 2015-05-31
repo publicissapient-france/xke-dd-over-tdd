@@ -60,4 +60,16 @@ describe "The Dungeon" do
       expect(@dungeon.readd(18)).to be(9)
     end
   end
+
+  context "convert numbers to letters" do
+    {
+      0 => "A",
+      1 => "B",
+      9 => "J"
+    }.each_pair do |number, letter|
+      it "converts #{number} to #{letter}" do
+        expect(@dungeon.convertNumber(number)).to eq(letter)
+      end
+    end
+  end
 end

@@ -1,7 +1,8 @@
 class Dungeon
+  LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
   def convert(symbol_in)
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-    numberFromLetter = letters.index(symbol_in)
+
+    numberFromLetter = LETTERS.index(symbol_in)
     if numberFromLetter == nil
       return 7 if "!?-&".index(symbol_in) != nil
       numberOfLetter = symbol_in.to_i
@@ -21,5 +22,9 @@ class Dungeon
     numbers = number_in.to_s.split("")
     numbers.each { |n| sum += n.to_i }
     return sum
+  end
+
+  def convertNumber(number_in)
+    return LETTERS[number_in]
   end
 end

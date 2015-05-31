@@ -41,4 +41,17 @@ describe "The Dungeon" do
       end
     end
   end
+
+  context "special symbols to numbers" do
+    {
+      "!" => 7,
+      "?" => 7,
+      "-" => 7,
+      "&" => 7
+    }.each_pair do |symbol, number|
+      it "converts #{symbol} to #{number}" do
+        expect(@dungeon.convert(symbol)).to be(number)
+      end
+    end
+  end
 end

@@ -3,6 +3,7 @@ class Dungeon
     letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     numberFromLetter = letters.index(letter_in)
     if numberFromLetter == nil
+      return 7 if "!?-&".index(letter_in) != nil
       numberOfLetter = letter_in.to_i
       return numberOfLetter + 5 if numberOfLetter < 4
       return numberOfLetter

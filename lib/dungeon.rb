@@ -1,5 +1,14 @@
 class Dungeon
+
   LETTERS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+
+  def objectTo(name_in)
+    total = 0
+    name_in.each_char {|letter| total += convert(letter) }
+    return objectFor(toLetter(readd(total)))
+  end
+
+
   def convert(symbol_in)
 
     numberFromLetter = LETTERS.index(symbol_in)

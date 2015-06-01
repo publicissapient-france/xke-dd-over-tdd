@@ -6,9 +6,17 @@ describe "The Dungeon" do
     @dungeon = Dungeon.new
   end
 
-  xit "gives an object based on a name" do
-    expect(objectTo("Gideon")).to be("Orb")
+  context "gives an object based on a name" do
+    {
+      "GIDEON" => "Orb",
+      "AKUKU" => "Medal"
+    }.each_pair do |name, object|
+      it "gives #{object} to #{name}" do
+        expect(@dungeon.objectTo(name)).to eq(object)
+      end
+    end
   end
+
   context "convert letters to numbers" do
     {
       "A" => 0,

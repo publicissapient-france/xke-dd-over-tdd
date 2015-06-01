@@ -8,8 +8,9 @@ describe "The Dungeon" do
 
   context "gives an object based on a name" do
     {
-      "GIDEON" => "Orb",
-      "AKUKU" => "Medal"
+      "Gideon" => "Orb",
+      "Akuku" => "Medal",
+      "Thor" => "Ring of Protection"
     }.each_pair do |name, object|
       it "gives #{object} to #{name}" do
         expect(@dungeon.objectTo(name)).to eq(object)

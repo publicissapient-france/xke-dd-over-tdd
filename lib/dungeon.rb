@@ -4,7 +4,7 @@ class Dungeon
 
   def objectTo(name_in)
     total = 0
-    name_in.each_char {|letter| total += convert(letter) }
+    name_in.upcase.each_char {|letter| total += convert(letter) }
     return objectFor(toLetter(readd(total)))
   end
 

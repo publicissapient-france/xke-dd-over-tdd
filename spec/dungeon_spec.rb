@@ -71,8 +71,21 @@ describe "The Dungeon" do
       9 => "J"
     }.each_pair do |number, letter|
       it "converts #{number} to #{letter}" do
-        expect(@dungeon.convertNumber(number)).to eq(letter)
+        expect(@dungeon.toLetter(number)).to eq(letter)
       end
     end
+  end
+
+  context "object for a letter" do
+    {
+      "A" => "Medal",
+      "B" => "Boots of Speed",
+      "C" => "Headgear Armor Item"
+    }.each_pair do |letter, object|
+      it "gives a #{object} for #{letter}" do
+        expect(@dungeon.objectFor(letter)).to eq(object)
+      end
+    end
+
   end
 end

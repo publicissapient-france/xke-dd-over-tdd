@@ -24,7 +24,23 @@ class Dungeon
     return sum
   end
 
-  def convertNumber(number_in)
+  def toLetter(number_in)
     return LETTERS[number_in]
+  end
+
+  def objectFor(letter_in)
+    {
+      "A" => "Medal",
+      "B" => "Boots of Speed",
+      "C" => "Headgear Armor Item",
+      "D" => "Ring of Protection",
+      "E" => "Ring of Fire Resistance",
+      "F" => "Ring of Spell Turning",
+      "G" => "Gauntlets of Ogre Power",
+      "H" => "Anklet",
+      "I" => "Brooch",
+      "J" => "Orb"
+    }[letter_in]
+
   end
 end

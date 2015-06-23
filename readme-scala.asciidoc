@@ -6,4 +6,4 @@ Scala IDE
 sbt
 
 == Erreurs
-Sofia = medal
+Emily = Ring of spell turning

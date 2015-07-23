@@ -55,8 +55,8 @@ Chaque type est ensuite associé à un item selon le tableau ci-dessous :
 | Type B | Kayin, Sofia |
 | Type C | Jacob, Lynn  |
 | Type D | Thor, Jennie |
-| Type E | Seth, Emily  |
-| Type F | Ralph, Jess  |
+| Type E | Seth  |
+| Type F | Ralph, Jess, Emily  |
 | Type G | Dan, Ann     |
 | Type H | Duke, Wendy  | 
 | Type I | Axel, Zelda  |

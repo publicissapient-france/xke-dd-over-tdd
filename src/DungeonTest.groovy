@@ -56,7 +56,20 @@ class DungeonTest{
     void "should grant an item depending on the player's name"(){
         def params = ["Akuku", "Zapuk", "Kayin", "Sofia", "Jacob", "Lynn","Thor", "Seth", "Ralph", "Dan", "Duke", "Zelda", "Aaron"]
         def results = params.collect({dungeonGame.grantGift(it)})
-        assert results.type == ['A', 'A', 'B', 'B', 'C', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+        assert results == [
+                'Medal',
+                'Medal',
+                'Boots of Speed',
+                'Boots of Speed',
+                'Headgear Armor Item',
+                'Headgear Armor Item',
+                'Ring of Protection',
+                'Ring of Fire Resistance',
+                'Ring of Spell Turning',
+                'Gauntlets of Ogre Power',
+                'Anklet',
+                'Brooch',
+                'Orb']
     }
 
 }

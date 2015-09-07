@@ -48,6 +48,6 @@ class Dungeon{
     }
 
     def grantGift(name){
-        return items[convertNameToSum(name) as int]
+        return items[convertNameToSum(name) as int].name
     }
 }

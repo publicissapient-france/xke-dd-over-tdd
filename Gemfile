@@ -1,11 +1,10 @@
 source "https://rubygems.org"
 
-gem 'rspec'
-
-group :development do  
-  gem 'guard' 
+group :development do
+  gem 'rspec'
+  gem 'guard'
   gem 'guard-rspec'
   gem 'guard-bundler'
 
   gem 'terminal-notifier-guard'
-end  
+end
